@@ -9,10 +9,9 @@ class Article {
     // Using your expandButton reference, update the text on your expandButton to say "expand"
     // this.expandButton.textContent="expand";
     // Set a click handler on the expandButton reference, calling the expandArticle method.
-    this.panelBtnOpen = domElement.querySelectorAll('.panel-btn-open');
+    this.panelBtnOpen = domElement.querySelectorAll('.panel-btn');
     console.log(this.panelBtnOpen);
-    this.panelBtnClose = domElement.querySelectorAll('.panel-btn-close');
-    console.log(this.panelBtnClose);
+  
     this.expandButton.addEventListener('click', this.expandArticle.bind(this));
     this.h2 = domElement.querySelector('h2');
     console.log(this.h2);
@@ -26,9 +25,9 @@ class Article {
     this.domElement.classList.toggle('article-open');
     // this.panelBtnOpen.classList.toggle('hide-btn');
     // this.panelBtnClose.classList.toggle('hide-btn');
-    this.h2.style.transform="rotate(360deg)";
-    this.h2.style.transitionDuration='1s';
-    this.h2.style.opacity = "0.5";
+    // this.h2.style.transform="rotate(360deg)";
+    // this.h2.style.transitionDuration='1s';
+    // this.h2.style.opacity = "0.5";
   }
 }
 
